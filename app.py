@@ -226,7 +226,11 @@ ngrok.set_auth_token('2sSsGiGk6eD4gF8CH6dVJ2MPixw_3RtmjwbpNJy1jTY5tPDwz')
 
 # Setup ngrok and run Flask
 public_url = ngrok.connect(5000)
-print('Akses aplikasi di URL:', public_url)
+
+# Simpan URL ke file
+with open("ngrok_url.txt", "w") as f:
+    f.write(public_url.public_url)
+
+print("Akses aplikasi di URL:", public_url.public_url)
 
 app.run(port=5000)
-
