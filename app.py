@@ -222,7 +222,7 @@ def predict():
         "valid_probability": round(probability_svm[0][0] * 100, 2),
     })
 
-ngrok.set_auth_token('2kN8waXfVvvfRZETIlkSw6r1rH7_56b3WhYToR4YQEKMKjTRX')   
+ngrok.set_auth_token('2sSsGiGk6eD4gF8CH6dVJ2MPixw_3RtmjwbpNJy1jTY5tPDwz')   
 
 # Setup ngrok and run Flask
 public_url = ngrok.connect(5000)
